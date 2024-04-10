@@ -16,19 +16,20 @@
         </div>
         <div class="container-2">
             <div class="container-2-content">
-                <h2 class="container-2-content-h2 result">Ваш результат:</h2>
+                <h2 class="container-2-content-h2">Ваш результат: <span class='result-value'>...</span></h2>
                 <div class="container-2-content-sign">
                     <p class="container-2-content-sign-p">Выберите знак</p>
-                    <select class="container-2-content-sign-select">
-                        <option value="sum">+</option>
-                        <option value="minus">-</option>
-                        <option value="multiply">*</option>
-                        <option value="divide">/</option>
-                    </select>
+                
+                    <select class='container-2-content-sign-select'>
+                        <option value='+' selected>+</option>
+                        <option value='-'>-</option>
+                        <option value='/'>/</option>
+                        <option value='*'>*</option>
+                      </select>
                 </div>
                 
-                <button class="container-2-content-btn btn1">Показать результат</button>
-                <button class="container-2-content-btn btn2">Очистить</button>
+                <button class="container-2-content-btn result-btn">Показать результат</button>
+                <button class="container-2-content-btn reset-btn">Очистить</button>
             </div>
         </div>
         <div class="container-3">
