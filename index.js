@@ -4,6 +4,7 @@ const firstNumInput = document.querySelector('.container-1-content-input');
 const secondNumInput = document.querySelector('.container-3-content-input');
 const resultTitle = document.querySelector('.result-value');
 const reset = document.querySelector('.reset-btn');
+const btnTitle = document.querySelector('.btnTitle')
 
 
 const operation = {
@@ -86,3 +87,30 @@ result.addEventListener('click', function(e) {
 });
 
 reset.addEventListener('click', resetCalculate);
+
+
+//DZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZ
+//DZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZ
+//DZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZDZ
+
+function formatUserName (str) {
+    const lowerCase = str.toLowerCase().slice(1)
+    const firstLetter = str[0].toUpperCase()
+    return firstLetter + lowerCase
+}
+console.log(formatUserName('STAS'));
+
+
+firstNumInput.addEventListener('keyup', function (e) {
+    resultTitle.textContent = calculateData.num1
+});
+
+ btnTitle.addEventListener('click', function text(e) {
+    resultTitle.textContent = formatUserName(calculateData.num1) 
+    console.log(formatUserName(calculateData.num1));
+});
+
+
+
+
+
